@@ -1,0 +1,361 @@
+@font-face 
+{
+    font-family: Title;
+    src: url(Fonts/Title.otf);
+}
+
+@font-face 
+{
+    font-family: Headings;
+    src: url(Fonts/Roman\ Vibes\ demo.otf);
+}
+
+@font-face {
+    font-family: Body;
+    src: url(Fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+body
+{
+    background-color: #FDFAE1;
+}
+
+html 
+{
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+a 
+{
+	text-decoration: none;
+}
+
+.container 
+{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar 
+{
+  background-color: #683A2C;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  height: fit-content;
+}
+  
+.nav-items 
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display the items in a row */
+  justify-content: right;
+  align-items: right;
+  margin-right: 2%;
+}
+  
+.nav-items li
+{
+  margin-right: 30px; /* Add spacing between the items */
+}
+  
+.nav-items li:last-child {
+  margin-right: 0; /* Remove the right margin from the last item */
+}
+
+.nav-items li a 
+{
+  text-decoration: none;
+  font-family: Headings;
+  color: #FDFAE1;
+  font-size: 30px;
+  padding: 0%;
+}
+
+.home
+{
+  background-image: url("Images/flowers.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: flex;
+}
+
+.display
+{
+  flex: 0 0 80%;
+}
+
+#store_name
+{
+  font-size: 1000%;
+  font-family: Title;
+  text-align: right;
+  color: #683A2C;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+#store_details
+{
+  margin-top: 0%;
+  font-size: 500%;
+  font-family: Title;
+  text-align: right;
+  color: #683A2C;
+}
+
+.socials
+{
+  display: flex;
+  margin-left: 85%;
+  margin-bottom: 0%;
+}
+
+#socials
+{
+  width: 50px;
+  height: 50px;
+  margin: 1%;
+  margin-left: 10px;
+}
+
+#title
+{
+  font-size: 600%;
+  font-family: Title;
+  text-align: center;
+  color: #683A2C;
+  margin-bottom: 0%;
+  margin-top: 3%;
+}
+
+h3
+{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+  font-family: Headings;
+  color:#fff;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.gallery
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.content
+{
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25)
+  0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .4s;
+  background: #4F361C;
+}
+
+.content:hover
+{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+
+img
+{
+  width: 350px;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+p
+{
+  text-align: center;
+  color: #b2bec3;
+  padding-top: 0 8px;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: Body;
+}
+
+h6
+{
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  font-family: Headings;
+  color:#fff;
+}
+
+button
+{
+  text-align: center;
+  font-size: 24px;
+  font-family: Headings;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.buy-1
+{
+  background: #2ecc71;
+}
+
+.checkbox_container
+{
+  width: 100%;
+}
+
+.checkboxbox
+{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox-text
+{
+  font-family: Body;
+}
+
+.container_orderform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.container_orderform form{
+  padding:20px;
+  width: 1400px;
+  background: #4F361C;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  margin-top: 0%;
+}
+
+.container_orderform form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container_orderform form .row .col{
+  flex:1 1 250px;
+}
+
+.container_orderform form .row .col .title{
+  font-size: 20px;
+  color:#fff;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container_orderform form span
+{
+  color:#fff;
+  font-family: Body;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container_orderform form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container_orderform form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+  font-family: Body;
+}
+
+.container_orderform form .row .col .inputBox input{
+  width: 80%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container_orderform form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container_orderform form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container_orderform form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container_orderform form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container_orderform form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container_orderform form .submit-btn:hover{
+  background: #2ecc71;
+}
+
+.title_order
+{
+  font-family: Headings;
+  color: #fff;
+  font-size: 50px;
+}
+
+#payment
+{
+  font-size: 100px;
+  font-family: Headings;
+  color: #fff;
+}
+
